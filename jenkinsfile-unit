@@ -1,0 +1,11 @@
+pipeline {
+  stage {
+    stage("unit tests") {
+      steps {
+        script {
+          bat "gradlew.bat clean build"
+        }
+      }
+    }
+  }
+}
